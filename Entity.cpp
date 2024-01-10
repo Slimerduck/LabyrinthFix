@@ -36,8 +36,13 @@ Sprite Entity::getSprite() {
 	return sprite;
 }
 
+void Entity::setName(String name){
+	this ->name = name;
+}
 
-
+String Entity::getName(){
+	return name;
+}
 
 
 int Entity::getWidth() {

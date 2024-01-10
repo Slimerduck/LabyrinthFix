@@ -10,6 +10,7 @@ protected:
 	Vector2f speed;
 	int width = 80;
 	int height = 120;
+	String name;
 	String imagePath;
 	virtual void init();
 	void dontMoveBehindMap();
@@ -20,6 +21,8 @@ public:
 	Vector2f getPosition();
 	String getImagePath();
 	Sprite getSprite();
+	void setName(String name);
+	String getName();
 	void update();
 	void setWidth(int width);
 	void setHeight(int height);

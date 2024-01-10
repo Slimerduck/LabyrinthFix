@@ -5,6 +5,7 @@
 Player::Player(Vector2f position,String imagePath):MoveEntity(position,imagePath) {
 	init();
 	setPosition(position);
+	setName("player");
 }
 
 void Player::init() {
