@@ -23,29 +23,28 @@ private:
 
 	sf::String TileMap[HEIGHT_MAP] = {
 
-		"sssssssssssssssssssss",
+		"kkkkkkkkkkkkkkkkkkkkk",
 
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sgggggggggggggggggggs",
-
-		"sssssssssssssssssssss"
-
+		"kggggggggmggggkgmkgmk",
+		
+		"kgggggggggggggkggkggk",
+		
+		"kgggggkkkkkgggkggkggk",
+		
+		"kkkkkkkgmgkgggkggkggk",
+		
+		"kgggggggggkgggkggkggk",
+		
+		"kgggggggggkgggkggkggk",
+		
+		"kggkkkkkkkkgggkggkggk",
+		
+		"kggggggggggggggggkggk",
+		
+		"kggggggmgggggggmggggk",
+		
+		"kgggggggggggggggggggk",
+		
+		"kmgkkkkkkkkkkkkkkkkkk"
 	};
 };
