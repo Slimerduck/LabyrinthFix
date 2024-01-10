@@ -2,6 +2,10 @@
 #include<SFML/Graphics.hpp>
 #include "Player.h"
 #include "Money.h"
+#include "Wall.h"
+#include "Floor.h"
+#include <list>
+using namespace std;
 using namespace sf;
 const int WINDOW_HEIGHT = 720;
 const int WINDOW_WIDTH = 1260;
@@ -12,14 +16,12 @@ public:
 	Map();
 	void draw(RenderWindow &window);
 	Player* getPlayer();
-	Money* coin;
 	void update();
 private:
 	Image mapImage;
-	Texture mapTexture;
-	Sprite mapSprite;
 	void init();
 	Player * player;
+	list<Entity*> entities;
 
 	sf::String TileMap[HEIGHT_MAP] = {
 

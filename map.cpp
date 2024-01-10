@@ -1,10 +1,6 @@
 #include "map.h"
 
 void Map::init() {
-	mapImage.loadFromFile("images/textures.jpg");
-	mapTexture.loadFromImage(mapImage);
-	mapSprite.setTexture(mapTexture);
-	coin = new Money(Vector2f(100, 100),"images/coin.png");
 	player = new Player(Vector2f(70,70),"images/player1.png");
 }
 Map::Map() {
