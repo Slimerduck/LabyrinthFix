@@ -9,4 +9,4 @@ class Wall:public Entity{
     void init();
     public:
     Wall (Vector2f position, String imagePath);
-}
+};
