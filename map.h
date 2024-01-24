@@ -4,6 +4,7 @@
 #include "Money.h"
 #include "Wall.h"
 #include "Floor.h"
+#include "Hp.h"
 #include <list>
 using namespace std;
 using namespace sf;
@@ -31,7 +32,7 @@ private:
 		
 		"kgggggggggggggkggkggk",
 		
-		"kgggggkkkkkgggkggkggk",
+		"kgggggkkkkkhhgkggkggk",
 		
 		"kkkkkkkgmgkgggkggkggk",
 		
