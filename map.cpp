@@ -13,7 +13,7 @@ void Map::init() {
 			}
 			
 			if (TileMap[r][c] == 'k') {
-				Wall* wall = new Wall(Vector2f(c*60,r*60),"images/floor.png");
+				Wall* wall = new Wall(Vector2f(c*60,r*60),"images/brick.png");
 				entities.push_back(wall);
 			}
 			if (TileMap[r][c] == 'g') {
@@ -34,6 +34,16 @@ void Map::draw(RenderWindow &window) {
 }
 void Map::update() {
 	player->update();
+	for(auto it = entities.begin(); it!= entities.end();it++){
+		FloatRect playerCollider = player-> getSprite().getGlobalBounds();
+		FloatRect otherCollider = (*it)->getSprite().getGlobalBounds();
+		if(playerCollider.intersects(otherCollider)&& (*it)->getName()== "money"){
+			entities.erase(it++);
+		}else if (playerCollider.intersects(otherCollider)&&(*it)->getName()=="wall"){
+			player->setSpeed(Vector2f(-player->getSpeed().x,-player->getSpeed().y));
+			player->update();
+		}
+	}
 }
 Player* Map::getPlayer() {
 	return player;
