@@ -24,30 +24,18 @@ private:
 	Player * player;
 	list<Entity*> entities;
 
-	sf::String TileMap[HEIGHT_MAP] = {
-
-		"kkkkkkkkkkkkkkkkkkkkk",
-
-		"kggggggggmggggkgmkgmk",
-		
-		"kgggggggggggggkggkggk",
-		
-		"kgggggkkkkkhhgkggkggk",
-		
-		"kkkkkkkgmgkgggkggkggk",
-		
-		"kgggggggggkgggkggkggk",
-		
-		"kgggggggggkgggkggkggk",
-		
-		"kggkkkkkkkkgggkggkggk",
-		
-		"kggggggggggggggggkggk",
-		
-		"kggggggmgggggggmggggk",
-		
-		"kgggggggggggggggggggk",
-		
-		"kmgkkkkkkkkkkkkkkkkkk"
-	};
+sf::String TileMap[HEIGHT_MAP] = {
+"kkkkkkkkkkkkkkkkkkkkk",
+"kggggggggmggggkgmkgmk",
+"kggggghgghggggkggkggk",
+"kgggggkkkkkgggkggkggk",
+"kkkkkkkgmgkgggkggkggk",
+"kgggggggggkgggkggkggk",
+"kgggggggggkgggkggkggk",
+"kggkkkkkkkkgggkggkggk",
+"kggggggggggggggggkggk",
+"kggggggmgggggggmggggk",
+"kgggggggggggggggggggk",
+"kmgkkkkkkkkkkkkkkkkkk"
+};
 };
