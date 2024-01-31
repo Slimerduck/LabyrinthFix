@@ -23,7 +23,7 @@ void Map::init() {
 			if (TileMap[r][c] == 'h') {
 				Floor* floor = new Floor(Vector2f(c*60,r*60),"images/floor.png");
 				entities.push_back(floor);
-				Hp* hp = new Hp(Vector2f(r*60,c*60),"images/hp.png");
+				Hp* hp = new Hp(Vector2f(c*60,r*60),"images/hp.png");
 				entities.push_back(hp);
 			}
 		}
